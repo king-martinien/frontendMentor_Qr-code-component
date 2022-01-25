@@ -1,0 +1,135 @@
+:root {
+  --size: 15px;
+  --fw-normal: 400;
+  --fw-bold: 700;
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-gray: hsl(212, 45%, 89%);
+  --clr-grayish-blue: hsl(220, 15%, 55%);
+  --clr-dark-blue: hsl(218, 44%, 22%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::-moz-selection {
+  background-color: dodgerblue;
+  color: var(--clr-white);
+}
+
+*::selection {
+  background-color: dodgerblue;
+  color: var(--clr-white);
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: var(--size);
+  background-color: var(--clr-light-gray);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+}
+
+@media screen and (min-width: 520px) {
+  .container {
+    width: auto;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-10 {
+  gap: 15px;
+}
+
+.card {
+  background-color: var(--clr-white);
+  color: var(--clr-grayish-blue);
+  border-radius: 12px;
+  padding: 18px;
+  padding-bottom: 25px;
+  text-align: center;
+  -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 12px rgba(0, 0, 0, 0.16);
+}
+
+.card__img {
+  border-radius: inherit;
+  overflow: hidden;
+}
+
+.card__content {
+  padding: 4px;
+}
+
+.card__content-title {
+  color: var(--clr-dark-blue);
+  font-size: 22px;
+}
+
+@media screen and (min-width: 520px) {
+  .card {
+    width: 320px;
+  }
+}
+
+.attribution {
+  text-align: center;
+}
+
+.attribution a {
+  color: dodgerblue;
+}
+/*# sourceMappingURL=style.css.map */

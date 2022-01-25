@@ -1,0 +1,59 @@
+.container {
+  width: 85%;
+  margin: auto;
+
+  @media screen and (min-width: 520px) {
+    // border: 2px solid red;
+    width: auto;
+  }
+}
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-10 {
+  gap: 15px;
+}
+
+.card {
+  background-color: var(--clr-white);
+  color: var(--clr-grayish-blue);
+  border-radius: 12px;
+  padding: 18px;
+  padding-bottom: 25px;
+  text-align: center;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.16);
+
+  &__img {
+    border-radius: inherit;
+    overflow: hidden;
+  }
+
+  &__content {
+    padding: 4px;
+
+    &-title {
+      color: var(--clr-dark-blue);
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (min-width: 520px) {
+    width: 320px;
+  }
+}
+
+.attribution {
+  text-align: center;
+  a {
+    color: dodgerblue;
+  }
+}
